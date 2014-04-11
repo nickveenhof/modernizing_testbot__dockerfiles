@@ -46,6 +46,8 @@ fi
 # Make sure we are at the root 
 cd ${PWD}
 
+echo "Current Location: ${PWD}"
+
 # Install Docker
 set +e 
 if [ ! -f /usr/bin/docker ];
