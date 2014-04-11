@@ -59,6 +59,8 @@ if [ ! -f /usr/bin/docker ];
     echo
     echo "Docker found at /usr/bin/docker:"
     echo "------------------------------------"
+    docker -d &
+    sleep 1
     docker version
 fi
 
