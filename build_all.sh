@@ -85,7 +85,7 @@ echo
 echo "Build and start mysql container"
 echo "------------------------------------"
 echo
-cd ${PWD}/distributed/database/mysql
+cd distributed/database/mysql
 ./stop-server.sh
 umount /tmp/tmp.* >/dev/null || /bin/true
 rm -rf /tmp/tmp.* >/dev/null || /bin/true
@@ -97,7 +97,7 @@ echo
 echo "Make sure we Build web containers"
 echo "------------------------------------"
 echo
-cd ${PWD}/apachephp/
+cd ../../apachephp/
 ./build.sh
 
 # Do a test run to collect test list and update repos 
