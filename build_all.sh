@@ -18,7 +18,7 @@
 #
 
 REPODIR=${REPODIR:-"$HOME/testbotdata"}
-PWD="$(pwd)"
+PWD="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 #print usage help if no arg, -h, --help
 if [ "$1" = "" ] || [ "$1" = "-h" ] || [ "$1" = "--help" ]
